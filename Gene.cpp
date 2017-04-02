@@ -52,7 +52,7 @@ void Gene::swapGene(const Gene &gene0, const Gene &gene1, Gene &gene2, Gene &gen
 
 void Gene::variation()
 {
-	int pos = rand()%num;
+	int pos = rand()%Gene::bitNum;
 	if (geneSequence[pos])
 	{
 		geneSequence[pos] = 0;
@@ -147,6 +147,6 @@ void Gene::randSelect(Gene *gene, int &order0 ,int &order1)
 void Gene::get_rand(double &x, double &y)
 {
 	int N = 999;
-	x = rand()%(N+1)/(float)(N+1);//生成0-1间的随机数
+	x = rand()%(N+1)/(float)(N+1);//脡煤鲁脡0-1录盲碌脛脣忙禄煤脢媒
 	y = rand()%(N+1)/(float)(N+1);
 }
